@@ -4,14 +4,14 @@
 
 ### 예제 데이터 만들기
 
-먼저 $$y=3x + 5$$를 이루는 데이터를 만들어보자. 임의의 $$x$$ 값들을 만든 후, $$y$$ 값들을 식에 생성 해주면 된다.  이후 sklearn 패키지를 사용하기 위해 `reshape((-1, 1))`을 이용하여 $$x$$ 값을 (데이터의 수, 독립 변수의 수) 형태의 2차원 배열로 만든 것에 주의하자.
+먼저 $$y=3x + 5$$를 이루는 데이터를 만들어보자. 임의의 $$x$$ 값들을 만든 후, $$y$$ 값들을 식에 생성 해주면 된다.  이후 사이킷런 패키지를 사용하기 위해 `reshape((-1, 1))`을 이용하여 $$x$$ 값을 (데이터의 수, 독립 변수의 수) 형태의 2차원 배열로 만든 것에 주의하자.
 
 ```python
 import numpy as np
 np.random.seed(47)
 
 X = np.array(np.random.rand(50)).reshape((-1, 1)) # X.shape: (50, 1)
-y = X * 3 + 5                                     # y.shape: (50, 1)
+y = X * 3 + 5                                     # y.s런ape: (50, 1)
 ```
 
 그리고 $$y$$ 값에 노이즈를 조금 추가해서 조금 더 현실적인 데이터를 만들어준다.
@@ -32,7 +32,7 @@ plt.grid()
 plt.show()
 ```
 
-![linear_regression_exam1_data](img\linear_regression_exam1_data.PNG)
+![linear_regression_exam1_data](../img/linear_regression_exam1_data.PNG)
 
 
 
