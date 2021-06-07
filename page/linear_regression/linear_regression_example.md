@@ -32,7 +32,7 @@ plt.grid()
 plt.show()
 ```
 
-![linear_regression_exam1_data](../img/linear_regression_exam1_data.PNG)
+![linear_regression_exam1_data](../../img/linear_regression_exam1_data.PNG)
 
 
 
