@@ -4,7 +4,7 @@
 
 ### 선형 데이터 만들기
 
-먼저 $$y=3x + 5$$를 이루는 간단한 선형 데이터를 만들어보자. 임의의 $$x$$ 값들을 만든 후, $$y$$ 값들을 식에 생성 해주면 된다. 
+먼저 $$y=3x + 5$$를 이루는 간단한 선형 데이터를 만들어보자. 임의의 $$x$$ 값들을 만든 후, $$y$$ 값들을 식을 이용해 생성 해주면 된다. 
 
 ```python
 import numpy as np
@@ -33,7 +33,7 @@ plt.grid()
 plt.show()
 ```
 
-![linear_regression_exam1_data](../../img/linear_regression_exam1_data.PNG)
+![선형 데이터](../../img/linear_regression_exam1_data.PNG)
 
 
 
@@ -118,7 +118,7 @@ X = 6 * np.random.rand(m, 1) - 3
 y = 0.5 * X**2 + X + 2 + np.random.randn(m, 1) 
 ```
 
-앞서 `LinearRegression` 모델을 이용하여 선형 데이터를 학습하였다. 여기서도 같은 모델을 사용할 것이다. 비선형 모델은 우리가 가진 데이터에 새로운 거듭제곱 특성을 추가하여 사용하면 만들 수 있다. (별도로 비선형 모델을 사용하는 것이 아니라 데이터를 변형하여 기존의 선형 모델을 그대로 사용한다.) 직접 $$X$$ 값을 제곱하여 데이터를 추가할수도 있지만 여기서는 아래와 같이 사이킷런의 `PolynomialFeatures`를 사용해 데이터를 변환한다.
+앞서 `LinearRegression` 모델을 이용하여 선형 데이터를 학습하였다. 여기서도 같은 모델을 사용할 것이다. 비선형 모델은 우리가 가진 데이터에 새로운 거듭제곱 특성을 추가하여 사용하면 만들 수 있다. (별도로 비선형 모델을 사용하는 것이 아니라 데이터를 변형하여 기존의 선형 모델을 그대로 사용한다.) 직접 `X` 값을 제곱하여 데이터를 추가할수도 있지만 여기서는 아래와 같이 사이킷런의 `PolynomialFeatures`를 사용해 데이터를 변환하여 사용하자.
 
 ```python
 from sklearn.preprocessing import PolynomialFeatures
@@ -162,7 +162,7 @@ plt.ylabel('y')
 plt.grid()
 ```
 
-![linear_regression_exam2_data](../../img/linear_regression_exam2_data.PNG)
+![비선형 데이터](../../img/linear_regression_exam2_data.PNG)
 
 ### 전체 코드
 
